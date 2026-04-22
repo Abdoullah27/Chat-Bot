@@ -78,24 +78,15 @@
         // Define list of messages , 
         function MessagesList() {
 
-            const [messages, SetMessages] = React.useState([{
-                text: 'Hello, how are you?',
-                sender: 'user',
-                id: "1"
-            }, {
-                text: 'I\'m fine, thank you!',
-                sender: 'bot',
-                id: "2"
-            }, {
-                text: 'Hello, how are you?',
+                      const [messages, SetMessages] = React.useState([{
+                text: 'Hey bot, what can u do?',
                 sender: 'user',
                 id: "3"
             }, {
-                text: 'I\'m fine, thank you!',
+                text: 'Hey! I can answer simple questions, like math, history, and more. What would you like to know?',
                 sender: 'bot',
                 id: "4"
             }])
-
 
             function sendMessage(text) {
                 const response = Chatbot.getResponse(text);
